@@ -7,3 +7,18 @@
 html,body{
     font-family: 'Roboto', sans-serif;
 } */
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap:10px;
+
+
+  }
+  .grid-item {
+    width: 242px;
+    height: 136px;
+    color: white;
+   
+  }
