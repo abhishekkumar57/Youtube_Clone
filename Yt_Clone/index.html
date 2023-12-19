@@ -6,18 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youtube Clone</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
 </head>
 
-<body class="w-full h-full overflow-hidden">
-    <div class=" flex justify-between">
-        <div class="logo bg-pink-500">
-            <img src="" alt="logo">
+<body class="w-full h-full overflow-hidden m-0 p-0 bg-black">
+    <div class=" flex justify-between ml-4 items-center">
+        <div class="logo">
+            <div class="flex cursor-pointer items-center justify-center gap-2">
+                <img src="./imges/hambarger.png" alt="">
+                <img src="./imges/Youtube logo.png" class="mt-2" alt="logo">
+            </div>
+
         </div>
-        <div class="search-bar bg-red-950">searchbar</div>
-        <div class="prof-icon bg-yellow-300">profileIcon</div>
+        <div class="search-bar flex items-center justify-center">
+            <div class="pt-2 relative mx-auto text-gray-600 bg-black">
+                <input class="border bg-black border-gray-500 h-10 px-5 pr-60 rounded-sm text-sm focus:outline-none"
+                    type="search" name="search" placeholder="Search">
+                <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
+                    <svg class="text-gray-600 h-4 w-4 fill-current" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px"
+                        viewBox="0 0 56.966 56.966" style="enable-background:new 0 0 56.966 56.966;"
+                        xml:space="preserve" width="512px" height="512px">
+                        <path
+                            d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23  s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92  c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17  s-17-7.626-17-17S14.61,6,23.984,6z" />
+                    </svg>
+                </button>
+            </div>
+            <div class="ml-2 cursor-pointer">
+                <img src="./imges/Group 3.png" alt="">
+            </div>
+        </div>
+        <div class="prof-icon flex gap-3 mt-2 mr-5 cursor-pointer">
+            <img class="h-[24px] w-[24px]" src="./imges/create.png" alt="">
+            <img class="h-[18px] w-[18px] mt-1" src="./imges/Group.png" alt="">
+            <img class="h-[24px] w-[24px]" src="./imges/create333.png" alt="">
+            <img class="h-[24px] w-[24px]" src="./imges/Profile.png" alt="">
+        </div>
     </div>
-    <div class="flex">
-        <div class="w-1/5 bg-red-500" >ff</div>
+    <!-- Upper Navigation Completed -->
+    <!-- start side navigation -->
+    <div class="flex  mt-2">
+        <div class="w-1/5 flex flex-col gap-3 ">
+            <div class="home flex items-center gap-4 ml-4 mt-2">
+                <img src="./imges/home.png" alt="">
+                <h2 class="text-white text-sm">Home</h2>
+            </div>
+            <div class="home flex items-center gap-4 ml-4">
+                <img src="./imges/explore.png" alt="">
+                <h2 class="text-white text-sm">Explore</h2>
+            </div>
+            <div class="home flex items-center gap-2 ml-4">
+                <img src="./imges/shorts.png" alt="">
+                <h2 class="text-white text-sm">Shorts</h2>
+            </div>
+            <div class="home flex items-center gap-2 ml-4">
+                <img src="./imges/subscription.png" alt="">
+                <h2 class="text-white">Subscriptions</h2>
+            </div>
+            <div class="border-b-2 border-gray-800 mr-3 mt-4"></div>
+
+            <div class="home flex items-center gap-2 ml-4">
+                <img src="./imges/library.png" alt="">
+                <h2 class="text-white text-sm">Library</h2>
+            </div>
+            <div class="home flex items-center gap-2 ml-4">
+                <img src="./imges/home.png" alt="">
+                <h2 class="text-white text-sm">History</h2>
+            </div>
+            <div class="home flex items-center gap-2 ml-4">
+                <img src="./imges/your_video.png" alt="">
+                <h2 class="text-white">Your Videos</h2>
+            </div>
+            <div class="home flex items-center gap-2 ml-4">
+                <img src="./imges/watch_later.png" alt="">
+                <h2 class="text-white text-sm">Watch Later </h2>
+            </div>
+            <div class="home flex items-center gap-2 ml-4">
+                <img src="./imges/liked.png" alt="">
+                <h2 class="text-white text-sm">Liked Videos</h2>
+            </div>
+            <div class="border-b-2 border-gray-800 mr-3 mt-6"></div>
+            <h1 class="font-bold text-white ml-3 text-sm">SUBSCRIPTIONS</h1>
+            <div class="btm-sec flex items-center justify-evenly">
+                <img src="./imges/Ellipse 1444.png" alt="">
+                <h3 class="text-white text-sm">Nadir On the Go</h3>
+                <img src="./imges/Ellipse 2ppp.png" alt="">
+            </div>
+            <div class="btm-sec flex items-center justify-evenly">
+                <img class="ml-2" src="./imges/Ellipse 1.png" alt="">
+                <h3 class="text-white text-sm">Coke Studio Bangla</h3>
+                <img class="mr-3" src="./imges/Ellipse 2ppp.png" alt="">
+            </div>
+            <div class="btm-sec flex items-center justify-evenly">
+                <img class="mr-8" src="./imges/Ellipse 1f.png" alt="">
+                <h3 class="text-white mr-12 text-sm">FIGMA</h3>
+                <img class="mr-2" src="./imges/Ellipse 2ppp.png" alt="">
+            </div>
+            <div class="btm-sec flex items-center justify-evenly">
+                <img class="ml-2" src="./imges/Ellipse 31.png" alt="">
+                <h3 class="text-white text-sm">ATC Android 2ccc...</h3>
+                <img class="mr-3" src="./imges/Ellipse 2ppp.png" alt="">
+            </div>
+            <div class="btm-sec flex items-center justify-evenly">
+                <img src="./imges/Ellipse 133.png" alt="">
+                <h3>Nadir On the Go</h3>
+                <img src="./imges/Ellipse 2ppp.png" alt="">
+            </div>
+
+          
+
+
+
+        </div>
         <!-- for grid view -->
         <div class="w-4/5 bg-green-600">ff</div>
     </div>
